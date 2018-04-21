@@ -11,6 +11,8 @@ import UIKit
 
 class ColorsViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
+    @IBOutlet weak var colorsTableView: UITableView!
+    
     var colors = [Color(name: "red", color: UIColor.red),
                   Color(name: "orange", color: UIColor.orange),
                   Color(name: "yellow", color: UIColor.yellow),
@@ -21,6 +23,8 @@ class ColorsViewController: UIViewController, UITableViewDataSource, UITableView
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.title = "Colors"
     }
     
     override func didReceiveMemoryWarning() {
@@ -46,5 +50,16 @@ class ColorsViewController: UIViewController, UITableViewDataSource, UITableView
         return cell
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.cellForRow(at: indexPath)?.isSelected = false
+    }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let destination = segue.destination as? ColorDetailViewController,
+            let row = colorsTableView.indexPathForSelectedRow?.row {
+            //only if successful will we attempt to send color
+            destination.color = colors[row]
+        }
+        
+    }
 }

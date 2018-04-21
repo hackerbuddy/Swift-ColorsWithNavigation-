@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D170D7F3208BF25C00E7276F /* ColorDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D170D7F2208BF25C00E7276F /* ColorDetailViewController.swift */; };
 		D1CAD9DA207EB41000F7DE95 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1CAD9D9207EB41000F7DE95 /* AppDelegate.swift */; };
 		D1CAD9E1207EB41000F7DE95 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D1CAD9E0207EB41000F7DE95 /* Assets.xcassets */; };
 		D1CAD9E4207EB41000F7DE95 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D1CAD9E2207EB41000F7DE95 /* LaunchScreen.storyboard */; };
@@ -37,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D170D7F2208BF25C00E7276F /* ColorDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorDetailViewController.swift; sourceTree = "<group>"; };
 		D1CAD9D6207EB41000F7DE95 /* Colors.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Colors.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D1CAD9D9207EB41000F7DE95 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D1CAD9E0207EB41000F7DE95 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -108,6 +110,7 @@
 				D1CADA0B207EBE8B00F7DE95 /* Main.storyboard */,
 				D1CADA07207EB41D00F7DE95 /* Color.swift */,
 				D1CADA09207EB51400F7DE95 /* ColorsViewController.swift */,
+				D170D7F2208BF25C00E7276F /* ColorDetailViewController.swift */,
 			);
 			path = Colors;
 			sourceTree = "<group>";
@@ -269,6 +272,7 @@
 				D1CAD9DA207EB41000F7DE95 /* AppDelegate.swift in Sources */,
 				D1CADA0A207EB51400F7DE95 /* ColorsViewController.swift in Sources */,
 				D1CADA08207EB41D00F7DE95 /* Color.swift in Sources */,
+				D170D7F3208BF25C00E7276F /* ColorDetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

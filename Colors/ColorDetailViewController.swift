@@ -10,9 +10,18 @@ import UIKit
 
 class ColorDetailViewController: UIViewController {
 
+    var color: Color?
+    
+    @IBOutlet weak var colorNameLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        colorNameLabel.text = color?.name
+        
+        self.view.backgroundColor = color?.color
+        self.title = color?.name
+        
         // Do any additional setup after loading the view.
     }
 
